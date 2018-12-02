@@ -9,7 +9,7 @@
 
     <groupId>com.github.mongobee</groupId>
     <artifactId>mongobee</artifactId>
-    <version>0.14-SNAPSHOT</version>
+    <version>0.14-tskur</version>
 
     <licenses>
         <license>
@@ -35,12 +35,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>hydra</id>
+            <url>https://hydra/nexus/repository/tskur-snapshots/</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>hydra</id>
+            <url>https://hydra/nexus/repository/tskur-releases/</url>
         </repository>
     </distributionManagement>
 

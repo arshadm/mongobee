@@ -28,7 +28,7 @@ public class ChangeEntryIndexDao {
   }
 
   public Document findRequiredChangeAndAuthorIndex(MongoDatabase db) {
-    MongoCollection<Document> indexes = db.getCollection("system.indexes");
+    MongoCollection<Document> indexes = db.getCollection(changelogCollectionName + ".indexes");
     Document index = indexes.find(new Document()
         .append("ns", db.getName() + "." + changelogCollectionName)
         .append("key", new Document().append(ChangeEntry.KEY_CHANGEID, 1).append(ChangeEntry.KEY_AUTHOR, 1))
